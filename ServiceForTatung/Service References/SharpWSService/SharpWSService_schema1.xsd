@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://sharp.server.ws.v8.imis.tatung.com/" targetNamespace="http://sharp.server.ws.v8.imis.tatung.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SendOrder" type="tns:SendOrder" />
+  <xs:element name="SendOrderResponse" type="tns:SendOrderResponse" />
+  <xs:complexType name="SendOrder">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SendOrderResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

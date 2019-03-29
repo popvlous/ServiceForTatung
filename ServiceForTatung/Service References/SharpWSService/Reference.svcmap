@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f92c485d-3f20-416c-95c3-7d157f3f44c4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://139.223.20.158:9080/SalesWeb/Sharp_WSService/WEB-INF/wsdl/SharpWSService.wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SharpWSService_schema1.xsd" MetadataType="Schema" ID="821fad9e-5c2d-411b-b6a3-e9cb1f05d254" SourceId="1" SourceUrl="http://139.223.20.158:9080/SalesWeb/Sharp_WSService/WEB-INF/wsdl/SharpWSService_schema1.xsd" />
+    <MetadataFile FileName="Sharp_WSService.wsdl" MetadataType="Wsdl" ID="3240bcc8-e064-4522-8f66-bddb7dcbdec1" SourceId="1" SourceUrl="http://139.223.20.158:9080/SalesWeb/Sharp_WSService/WEB-INF/wsdl/SharpWSService.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

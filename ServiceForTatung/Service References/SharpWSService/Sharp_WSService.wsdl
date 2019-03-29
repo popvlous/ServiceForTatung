@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://sharp.server.ws.v8.imis.tatung.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Sharp_WSService" targetNamespace="http://sharp.server.ws.v8.imis.tatung.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="SharpWSService_schema1.xsd" namespace="http://sharp.server.ws.v8.imis.tatung.com/" />
+    </xsd:schema>
+  </types>
+  <message name="SendOrderResponse">
+    <part name="parameters" element="tns:SendOrderResponse" />
+  </message>
+  <message name="SendOrder">
+    <part name="parameters" element="tns:SendOrder" />
+  </message>
+  <portType name="Sharp_WSDelegate">
+    <operation name="SendOrder">
+      <input wsam:Action="http://sharp.server.ws.v8.imis.tatung.com/Sharp_WSDelegate/SendOrderRequest" message="tns:SendOrder" />
+      <output wsam:Action="http://sharp.server.ws.v8.imis.tatung.com/Sharp_WSDelegate/SendOrderResponse" message="tns:SendOrderResponse" />
+    </operation>
+  </portType>
+  <binding name="Sharp_WSPortBinding" type="tns:Sharp_WSDelegate">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="SendOrder">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Sharp_WSService">
+    <port name="Sharp_WSPort" binding="tns:Sharp_WSPortBinding">
+      <soap:address location="http://139.223.20.158:9080/SalesWeb/Sharp_WSService" />
+    </port>
+  </service>
+</definitions>
